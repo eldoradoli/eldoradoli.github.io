@@ -34,22 +34,49 @@ body {
     margin-top: 20px;
 }
 
+/* Existing styles... */
+
 .card {
-    display: block;
+    display: flex; /* Align image and text side by side */
+    align-items: center; /* Center items vertically */
     background-color: #f0f0f0;
     border-radius: 15px;
     overflow: hidden;
-    margin-bottom: 10px; /* Space between cards */
-    text-align: center;
-    text-decoration: none; /* No underline for links */
-    color: black; /* Text color for links */
+    margin-bottom: 10px;
+    padding: 18px; /* Add padding around the contents of the card */
+    box-sizing: border-box; /* Include padding in the width and height calculations */
+    text-decoration: none;
+    color: black;
 }
 
 .card img {
-    width: 100%; /* Adjust as needed */
-    display: block;
+    max-width: 40%; /* Maximum width of the image is 50% of its container */
+    height: auto; /* Maintain aspect ratio */
+    margin-right:30px; /* Add space between the image and the text */
 }
 
-.card p {
-    margin: 10px;
+.text-content {
+    flex: 1; /* Take up the remaining space */
+}
+
+.text-content p {
+    margin: 0 0 10px 0; /* Add bottom margin to paragraphs */
+    word-break: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.6; /* 调整行距，这个值可以根据需要进行调整 */
+}
+
+.english {
+    font-family: 'Arial', sans-serif; /* 适用于英文的字体 */
+}
+
+.korean {
+    font-family: 'Malgun Gothic', sans-serif; /* 适用于韩文的字体 */
+}
+
+/* 对于中文，你可以选择一个默认的中文字体 */
+p {
+    font-family: 'Microsoft YaHei', 'Arial', sans-serif; /* 默认字体，优先显示中文 */
+    line-height: 1.6; /* 行距 */
+    /* ... 其他样式 ... */
 }
