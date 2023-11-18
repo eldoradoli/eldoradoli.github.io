@@ -3,42 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>音乐世界</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Singers</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="singers.html">歌手库</a></li>
-                <li><a href="about.html">关于我</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="alphabet-index">
-        <h2>浏览歌手</h2>
-        <div class="alphabet-list">
-            <a href="#A">A</a>
-            <a href="#B">B</a>
-            <!-- Add other letters -->
-            <a href="#Z">Z</a>
+    <div class="container">
+        <div class="header">
+            <h1>Singers</h1>
+            <div class="alphabet-navigation">
+                <a href="/a">A</a>
+                <a href="/b">B</a>
+                <a href="/c">C</a>
+                <a href="/d">D</a>
+            </div>
         </div>
-    </section>
-
-    <section id="featured-artists">
-        <h2>特色歌手</h2>
-        <div class="artist">
-            <img src="path_to_image.jpg" alt="歌手1">
-            <h3>歌手1</h3>
-            <p>简短介绍</p>
+        <div class="section popular">
+            <h2>Popular</h2>
+            <a href="/singer1" class="card">
+                <img src="singer1.jpg" alt="Singer Thumbnail">
+                <p>jianjie</p>
+            </a>
+            <a href="/singer2" class="card">
+                <img src="singer2.jpg" alt="Singer Thumbnail">
+                <p>jianjie</p>
+            </a>
+            <a href="/singer3" class="card">
+                <img src="singer3.jpg" alt="Singer Thumbnail">
+                <p>jianjie</p>
+            </a>
         </div>
-        <!-- Add other featured artists -->
-    </section>
-
-    <footer>
-        <p>版权所有 &copy; 2023 音乐世界</p>
-    </footer>
+    </div>
 </body>
 </html>

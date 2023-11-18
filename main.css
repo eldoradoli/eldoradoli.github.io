@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Adjust as per your design requirement */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header h1,
+.section h2 {
+    text-align: center;
+}
+
+.alphabet-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust the space between letters */
+}
+
+.alphabet-navigation a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.section {
+    margin-top: 20px;
+}
+
+.card {
+    display: block;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 10px; /* Space between cards */
+    text-align: center;
+    text-decoration: none; /* No underline for links */
+    color: black; /* Text color for links */
+}
+
+.card img {
+    width: 100%; /* Adjust as needed */
+    display: block;
+}
+
+.card p {
+    margin: 10px;
+}
