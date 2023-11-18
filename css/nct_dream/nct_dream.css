@@ -27,14 +27,6 @@ body, h1, p {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-/* 响应式设计，为不同屏幕大小调整标题大小 */
-@media (max-width: 768px) {
-    .title {
-        font-size: 1.5em; /* 在小屏幕上减小标题字体大小 */
-    }
-}
-
-
 .gallery {
     display: flex;
     flex-wrap: wrap;
