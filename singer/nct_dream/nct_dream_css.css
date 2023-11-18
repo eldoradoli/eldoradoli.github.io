@@ -19,7 +19,7 @@ body, h1, p {
 .header img {
     display: block; /* 设置图片为块级元素 */
     margin: 0 auto; /* 上下保持0，左右自动，确保图片在容器中居中 */
-    max-width: 40%; /* 最大宽度为容器宽度，确保图片不会超出容器 */
+    max-width: 100%; /* 最大宽度为容器宽度，确保图片不会超出容器 */
     height: auto; /* 高度自动，保持图片宽高比 */
 }
 
@@ -28,7 +28,7 @@ body, h1, p {
     bottom: 0;
     left: 50%; /* 水平居中定位 */
     transform: translateX(-50%); /* 使用transform来精确居中 */
-    width: 40%; /* 渐变层的宽度为100%覆盖整个父元素 */
+    width: 100%; /* 渐变层的宽度为100%覆盖整个父元素 */
     height: 30%; /* 渐变层的高度，可以根据需要进行调整 */
     background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.7));
 }
