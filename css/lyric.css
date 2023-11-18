@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif; /* 使用您选择的字体 */
+    background-color: #ffffff; /* 背景颜色设置为白色 */
+    color: #000000; /* 将所有文本颜色设置为黑色 */
+    line-height: 1.6; /* 设置行高 */
+    padding: 20px; /* 设置页面的内边距 */
+}
+
+p {
+    font-size: 18px; /* 设置字体大小 */
+    text-align: left; /* 文本左对齐 */
+    margin-bottom: 10px; /* 设置段落之间的间距 */
+    color: #000000; /* 特别为<p>元素指定文本颜色为黑色 */
+}
+
+/* 如果需要，也可以指定其他元素的文本颜色为黑色 */
+h1, h2, h3, a, li {
+    color: #000000;
+}
+
+/* 响应式设计：在不同屏幕大小下调整样式 */
+@media (max-width: 768px) {
+    p {
+        font-size: 14px; /* 在小屏幕上减小字体大小 */
+    }
+}
+
+/* 容器样式 */
+.container {
+    text-align: center; /* 使子元素居中 */
+    /* 其他样式... */
+}
+
+/* 文本块样式 */
+.text-block {
+    display: inline-block; /* 使元素可居中 */
+    text-align: left; /* 文本左对齐 */
+    width: 100%; /* 或者你想要的任何宽度 */
+    /* 可以添加padding或margin等其他样式 */
+}
+
+/* 或者使用最大宽度限制文本块的宽度 */
+.text-block {
+    display: inline-block;
+    text-align: left;
+    max-width: 600px; /* 限制文本块的最大宽度 */
+    /* 其他样式... */
+}

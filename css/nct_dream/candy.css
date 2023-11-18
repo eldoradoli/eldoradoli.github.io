@@ -1,0 +1,107 @@
+/* 你可以添加更多样式来美化网页，例如字体、颜色等 */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header {
+    position: relative; /* 相对定位，为子元素的绝对定位提供参考 */
+    text-align: center; /* 为内联或内联块级元素提供居中 */
+    margin-bottom: 20px; /* 和下面内容的间距 */
+}
+
+.header img {
+    display: block; /* 设置图片为块级元素 */
+    margin: 0 auto; /* 上下保持0，左右自动，确保图片在容器中居中 */
+    max-width: 50%; /* 最大宽度为容器宽度，确保图片不会超出容器 */
+    height: auto; /* 高度自动，保持图片宽高比 */
+}
+
+.title-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* 水平居中定位 */
+    transform: translateX(-50%); /* 使用transform来精确居中 */
+    width: 50%; /* 渐变层的宽度为100%覆盖整个父元素 */
+    height: 30%; /* 渐变层的高度，可以根据需要进行调整 */
+    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.7));
+}
+
+.title {
+    position: absolute;
+    bottom: 10px; /* 根据需要调整 */
+    left: 10px; /* 根据需要调整 */
+    color: white;
+    font-size: 50px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0; /* 移除内边距 */
+    margin: 0 auto; /* 居中对齐 */
+    max-width: 50%; /* 与头部图片宽度一致 */
+}
+
+.song {
+    width: 100%; /* 计算宽度，减去间距 */
+    margin: 0 auto;
+    box-sizing: border-box; /* 包括内边距和边框在内的总宽度 */
+}
+
+
+.song p {
+    font-size: 1.5em;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Adjust items inside the card */
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    /* Remove fixed width if set, or adjust as necessary */
+    width: 40%; /* Or you can set it to 100% if you want the card to fill its parent container */
+}
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0;
+    overflow: hidden;
+    margin: 0 auto; /* 设置上下边距为20px，左右自动居中 */
+    padding: 15px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    width: 50%; /* 卡片宽度为40% */
+    /* 其他样式 */
+}
+
+.english {
+    font-family: 'Arial', sans-serif; /* 适用于英文的字体 */
+}
+
+.korean {
+    font-family: 'Malgun Gothic', sans-serif; /* 适用于韩文的字体 */
+}
+
+/* 对于中文，你可以选择一个默认的中文字体 */
+p {
+    font-family: 'Microsoft YaHei', 'Arial', sans-serif; /* 默认字体，优先显示中文 */
+    line-height: 1.6; /* 行距 */
+    /* ... 其他样式 ... */
+}
